@@ -886,12 +886,11 @@ textarea {
 }
 
 .modal input:focus,
-input:active,
-textarea:focus,
-textarea:active {
+.modal input:active,
+.modal textarea:focus,
+.modal textarea:active {
   outline: none;
   border: 1px solid #2196f3;
-
 }
 .form-btn{
   padding: 10px 56px;
