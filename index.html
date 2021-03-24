@@ -434,30 +434,51 @@
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
         <p class="modal-tittle">Оставьте свои данные, мы вам перезвоним</p>
-            <div class="modal-field">
-            <label for="name" class="modal-text">Имя</label>
-            <input type="name" name="name" id="name" autocomplete="off">
-            </div>
-
-            <div class="modal-field">
-            <label for="tel" class="modal-text">Телефон</label>
-            <input type="tel" name="tel" id="tel" autocomplete="off">
-        </div>
-
-            <div class="modal-field">
-            <label for="mail" class="modal-text">Почта</label>
-            <input type="email" name="mail" id="mail">
-        </div>
-
-            <div class="modal-field">
-                <label for="comment" class="modal-text">Комментарий</label>
-            <textarea name="comment" id="comment" placeholder="Введите текст" rows="10"></textarea>
-            </div>
-
-            <div class="modal-policy">
-            <input type="checkbox" name="policy" id="policy" class="checkbox">
-            <label for="policy" class="modal-text">Соглашаюсь с рассылкой и принимаю <a class="policy-agreement" href="#">Условия договора</a></label>
-            </div>
+            
+            <label for="name" class="modal-field">
+                <input type="name" name="name" class="modal-input"autocomplete="off" placeholder=" ">
+                <span class="modal-text">Имя</span>
+                <svg class="modal-svg">
+                    <use href="./images/icons/sprite.svg#icon-person-black"></use>
+                </svg>
+            </label>
+                        
+            <label for="tel" class="modal-field">
+                <input type="tel" name="tel" class="modal-input"autocomplete="off" placeholder=" ">
+                <span class="modal-text">Телефон</span>
+                <svg class="modal-svg">
+                    <use href="./images/icons/sprite.svg#icon-phone-black"></use>
+                </svg>
+            </label>       
+           
+            <label for="mail" class="modal-field">
+                <input type="email" name="mail" class="modal-input"placeholder=" ">
+                <span class="modal-text">Почта</span>
+                <svg class="modal-svg">
+                    <use href="./images/icons/sprite.svg#icon-email-black"></use>
+                </svg>
+            </label>
+                     
+                <label for="comment" class="modal-field">
+                    <span class="modal-coment">Комментарий</span>
+                    <textarea name="comment" placeholder="Введите текст"></textarea>
+               </label>
+        
+            <!-- <label for="policy " class="modal-policy">
+                <input type="checkbox" name="policy" class="checkbox">
+                <span class="policy-text">Соглашаюсь с рассылкой и принимаю</span> 
+                <a class="policy-agreement" href="#">&nbsp;Условия договора</a>
+                <span class="icon">1</span>
+            </label> -->
+            <label class="modal-policy">
+                <input class="checkbox" type="checkbox" name="policy" />
+                <!-- <svg class="icon icon1">
+                    <use href="./images/icons/sprite.svg#icon-phone-black"></use>
+                </svg> -->
+                <span class="icon icon2"></span>
+                <span class="policy-text">Соглашаюсь с рассылкой и принимаю</span>
+                <a class="policy-agreement" href="#">&nbsp;Условия договора</a>
+            </label>
             
             <button type="submit" class="modal-button form-btn">Отправить</button>
 
