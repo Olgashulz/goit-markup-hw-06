@@ -435,46 +435,37 @@
     <div class="modal">
         <p class="modal-tittle">Оставьте свои данные, мы вам перезвоним</p>
             
-            <label for="name" class="modal-field">
-                <input type="name" name="name" class="modal-input"autocomplete="off" placeholder=" ">
+            <label for="name" class="modal-field" id="name">
+                <input type="text" name="name" class="modal-input" autocomplete="off" placeholder=" ">
                 <span class="modal-text">Имя</span>
                 <svg class="modal-svg">
                     <use href="./images/icons/sprite.svg#icon-person-black"></use>
                 </svg>
             </label>
                         
-            <label for="tel" class="modal-field">
-                <input type="tel" name="tel" class="modal-input"autocomplete="off" placeholder=" ">
+            <label for="tel" class="modal-field" id="tel">
+                <input type="tel" name="tel" class="modal-input" autocomplete="off" placeholder=" ">
                 <span class="modal-text">Телефон</span>
                 <svg class="modal-svg">
                     <use href="./images/icons/sprite.svg#icon-phone-black"></use>
                 </svg>
             </label>       
            
-            <label for="mail" class="modal-field">
-                <input type="email" name="mail" class="modal-input"placeholder=" ">
+            <label for="mail" class="modal-field" id="mail">
+                <input type="email" name="mail" class="modal-input" placeholder=" ">
                 <span class="modal-text">Почта</span>
                 <svg class="modal-svg">
                     <use href="./images/icons/sprite.svg#icon-email-black"></use>
                 </svg>
             </label>
                      
-                <label for="comment" class="modal-field">
+                <label for="comment" class="modal-field" id="comment">
                     <span class="modal-coment">Комментарий</span>
                     <textarea name="comment" placeholder="Введите текст"></textarea>
                </label>
-        
-            <!-- <label for="policy " class="modal-policy">
-                <input type="checkbox" name="policy" class="checkbox">
-                <span class="policy-text">Соглашаюсь с рассылкой и принимаю</span> 
-                <a class="policy-agreement" href="#">&nbsp;Условия договора</a>
-                <span class="icon">1</span>
-            </label> -->
-            <label class="modal-policy">
+
+            <label class="modal-policy" id="policy">
                 <input class="checkbox" type="checkbox" name="policy" />
-                <!-- <svg class="icon icon1">
-                    <use href="./images/icons/sprite.svg#icon-phone-black"></use>
-                </svg> -->
                 <span class="icon icon2"></span>
                 <span class="policy-text">Соглашаюсь с рассылкой и принимаю</span>
                 <a class="policy-agreement" href="#">&nbsp;Условия договора</a>
