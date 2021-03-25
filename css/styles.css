@@ -830,6 +830,7 @@ footer .container {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
+  z-index: -1;
 
   color: var(--text-color);
 }
@@ -868,6 +869,7 @@ footer .container {
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
+  z-index: -1;
 
   width: 18px;
   height: 18px;
@@ -906,10 +908,13 @@ footer .container {
 
 .modal-input {
   padding: 11px 41px;
+  z-index: 1;
 
+  background-color: transparent;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+  
 
   font-family: var(--main-font);
   font-size: 12px;
@@ -945,6 +950,7 @@ footer .container {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #757575;
+  cursor: pointer;
 }
 
 .policy-agreement {
@@ -975,6 +981,8 @@ footer .container {
   display: inline-block;
   width: 15px;
   height: 15px;
+  cursor: pointer;
+  
   background-color: #fff;
   border: 2px solid #212121;
   border-radius: 4px;
@@ -1013,6 +1021,19 @@ footer .container {
   width: 11px;
   height: 11px;
 }
+
+.modal-close-btn:focus {
+  /* background-color: var(--accent-color); */
+  border: 1px solid #2196f3;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-btn:focus .modal-close-svg {
+  fill: var(--accent-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
 
 /* ============== END MODAL ============== */
 
