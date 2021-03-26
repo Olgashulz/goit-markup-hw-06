@@ -986,16 +986,17 @@ footer .container {
   background-color: #fff;
   border: 2px solid #212121;
   border-radius: 4px;
-  transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox:checked + .icon {
+  border-color: transparent;
   border-color: var(--accent-color);
   background-color: var(--accent-color);
   background-origin: border-box;
   background-image: url(../images/icons/check.svg);
-  transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
